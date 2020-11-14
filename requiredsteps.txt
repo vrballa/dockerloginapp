@@ -1,0 +1,10 @@
+Pre-requisites: github(vrballa), travisci(vrballa), dockerhub(vballa) accounts
+step1: test build the docker image on  docker 
+step2: write a dockerfile,docker-compose file and .travis.yml
+step3: upload all the files into github
+step4: integrate the repository into travis ci and set the env variables
+step5: Travis ci build job upload the image into dockerhub
+step6:
+step7:
+step8:
+step9:
