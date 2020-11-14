@@ -14,14 +14,14 @@ after_success:
 
     - docker push vballa/loginapp
 
-deploy:
-    provider: elasticbeanstalk
-    region: ap-south-1
-    app: docker-loginapp
-    env: DockerLoginapp-env
-    bucket_name: elasticbeanstalk-ap-south-1-679022722124
-    bucket_path: docker-loginapp
-    on:
-        branch: master
-    access_key_id: $AWS_ACCESS_KEY
-    secret_acces_key: $AWS_SECRET_KEY
+# deploy:
+#     provider: elasticbeanstalk
+#     region: ap-south-1
+#     app: docker-loginapp
+#     env: DockerLoginapp-env
+#     bucket_name: elasticbeanstalk-ap-south-1-679022722124
+#     bucket_path: docker-loginapp
+#     on:
+#         branch: master
+#     access_key_id: $AWS_ACCESS_KEY
+#     secret_acces_key: $AWS_SECRET_KEY
