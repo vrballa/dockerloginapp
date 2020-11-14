@@ -4,15 +4,15 @@ services:
     - docker
 
 before_install:
-    - docker build -t softwarebhayya/loginapp .
+    - docker build -t vballa/loginapp .
 
 script:
-    - docker run softwarebhayya/loginapp npm test
+    - docker run vballa/loginapp npm test
 
 after_success:
     - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
 
-    - docker push softwarebhayya/loginapp
+    - docker push vballa/loginapp
 
 deploy:
     provider: elasticbeanstalk
